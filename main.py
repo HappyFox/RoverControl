@@ -9,6 +9,7 @@ from client import Client
 async def wshandler(request):
 
     ws = web.WebSocketResponse()
+    print("websocket connected");
 
     if not ws.can_prepare(request):
         return

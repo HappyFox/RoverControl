@@ -16,6 +16,8 @@
     var renderer;
     var scene;
     var camera;
+
+    var ws = new WebSocket("ws:"+ window.location.host + "/comms");
     /**
      * Initializes the scene, camera and objects. Called when the window is
      * loaded by using window.onload (see below)
